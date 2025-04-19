@@ -1,0 +1,28 @@
+# Qt specific
+*.pro.user
+*.pro.user.*
+*.qmake.stash
+*.qmake.cache
+
+# Build folders
+build/
+cmake-build-debug/
+cmake-build-debug-event-trace/
+cmake-build-release/
+debug/
+release/
+debug_static/
+release_static/
+
+# Qt Creator specific
+.idea/
+.vscode/
+
+# Temporary files
+*.swp
+*.bak
+*.orig
+
+# OS generated files
+.DS_Store
+Thumbs.db
