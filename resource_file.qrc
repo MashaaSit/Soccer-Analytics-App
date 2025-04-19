@@ -1,0 +1,7 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource>
+        <file alias ="gamefield_back.svg">images/gamefield_back.svg</file>
+        <file alias ="appIcon.png">images/appIcon.png</file>
+        <file alias ="PassData - Лист1.csv">datas/PassData - Лист1.csv</file>
+    </qresource>
+</RCC>

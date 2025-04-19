@@ -1,0 +1,5 @@
+/home/masha/projectQt/cmake-build-debug-event-trace/CMakeFiles/projectQt.dir
+/home/masha/projectQt/cmake-build-debug-event-trace/CMakeFiles/edit_cache.dir
+/home/masha/projectQt/cmake-build-debug-event-trace/CMakeFiles/rebuild_cache.dir
+/home/masha/projectQt/cmake-build-debug-event-trace/CMakeFiles/projectQt_autogen_timestamp_deps.dir
+/home/masha/projectQt/cmake-build-debug-event-trace/CMakeFiles/projectQt_autogen.dir

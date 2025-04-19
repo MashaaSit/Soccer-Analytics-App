@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>MainWindow</class>
+    <widget class="QMainWindow" name="MainWindow">
+        <property name="windowTitle">
+            <string>MainWindow</string>
+        </property>
+        <property name="styleSheet">
+            <string notr="true">background-color: #F8F7F7;</string>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <layout class="QHBoxLayout" name="mainLayout">
+                <!-- Поле игры -->
+                <item>
+                    <widget class="GameFieldLabel" name="gamefieldLabel">
+
+                        <property name="sizePolicy">
+                            <sizepolicy hsizetype="Expanding" vsizetype="Expanding"/>
+                        </property>
+                    </widget>
+                </item>
+                <!-- Панель информации -->
+                <item>
+                    <widget class="QWidget" name="rightPanel">
+                        <property name="maximumWidth">
+                            <number>500</number>
+                        </property>
+                        <layout class="QVBoxLayout" name="rightLayout">
+                            <item>
+                                <layout class="QHBoxLayout" name="teamInfoLayout">
+                                    <item>
+                                        <spacer name="horizontalSpacerLeft">
+                                            <property name="orientation">
+                                                <enum>Qt::Horizontal</enum>
+                                            </property>
+                                            <property name="sizeHint" stdset="0">
+                                                <size>
+                                                    <width>40</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                    </item>
+                                    <item>
+                                        <widget class="QLabel" name="firstTeamLabel">
+                                            <property name="styleSheet">
+                                                <string notr="true">
+                                                    background-color: #FFA680;
+                                                    border-radius: 4px;
+                                                    padding: 2px 4px;
+                                                </string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="QLabel" name="label">
+
+                                            <property name="text">
+                                                <string>Атакующая команда</string>
+                                            </property>
+                                            <property name="styleSheet">
+                                                <string notr="true">
+                                                    color:white;
+                                                    background-color: #333333;
+                                                    border-radius: 4px;
+                                                    padding: 2px 4px;
+                                                </string>
+                                            </property>
+
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="QLabel" name="secondTeamLabel">
+
+                                            <property name="styleSheet">
+                                                <string notr="true">
+                                                    background-color: #FFA680;
+                                                    border-radius: 4px;
+                                                    padding: 2px 4px;
+                                                </string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <spacer name="horizontalSpacerRight">
+                                            <property name="orientation">
+                                                <enum>Qt::Horizontal</enum>
+                                            </property>
+                                            <property name="sizeHint" stdset="0">
+                                                <size>
+                                                    <width>40</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                    </item>
+                                </layout>
+                            </item>
+                            <item>
+                                <layout class="QHBoxLayout" name="buttonsAttackLayout">
+                                    <item>
+                                        <widget class="QPushButton" name="prevAttackButton">
+                                            <property name="text">
+                                                <string>hide previous attack</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="QPushButton" name="drawAttackButton">
+                                            <property name="text">
+                                                <string>show next attack</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </item>
+                            <item>
+                                <widget class="QCheckBox" name="checkBox">
+                                    <property name="text">
+                                        <string>is_chipped</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="QCheckBox" name="checkBox_2">
+                                    <property name="text">
+                                        <string>is_foot</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="QLabel" name="label_3">
+                                    <property name="text">
+                                        <string>сколько пассов посмотреть в атаке?</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="QLineEdit" name="lineEdit"/>
+                            </item>
+                        </layout>
+                    </widget>
+                </item>
+
+            </layout>
+        </widget>
+        <widget class="QMenuBar" name="menubar"/>
+        <widget class="QStatusBar" name="statusbar"/>
+    </widget>
+    <customwidgets>
+        <customwidget>
+            <class>GameFieldLabel</class>
+            <extends>QLabel</extends>
+            <header location="global">/home/masha/projectQt/include/GameFieldLabel.h</header>
+        </customwidget>
+    </customwidgets>
+    <resources/>
+    <connections/>
+</ui>
